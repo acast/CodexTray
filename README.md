@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/icon.png" alt="CodexTray icon" width="220" />
+</p>
+
 # CodexTray
 
 CodexTray is a macOS menu bar companion for Codex.
@@ -5,6 +9,10 @@ CodexTray is a macOS menu bar companion for Codex.
 It reads your local Codex session logs and config from `~/.codex`, then shows your current rate limits, model, speed, and multiagent settings in a lightweight status item.
 
 Inspired by the Codex experience. Not affiliated with OpenAI.
+
+<p align="center">
+  <img src="assets/screenshot.png" alt="CodexTray screenshot" width="1100" />
+</p>
 
 ## What it does
 
