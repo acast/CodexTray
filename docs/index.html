@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CodexTray</title>
+    <meta
+      name="description"
+      content="CodexTray is a macOS menu bar companion for Codex. It reads local session logs and shows rate limits, model, speed, and multiagent status."
+    />
+    <link rel="icon" href="../assets/icon.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">MacOS menu bar companion for Codex</p>
+          <h1>Local status for Codex, always one click away.</h1>
+          <p class="lede">
+            CodexTray reads your local Codex session logs and config from <code>~/.codex</code>,
+            then surfaces rate limits, model, speed, and multiagent status without leaving your Mac.
+          </p>
+
+          <div class="actions">
+            <a class="button primary" href="https://github.com/acast/CodexTray">View on GitHub</a>
+            <a class="button secondary" href="../README.md">Read the README</a>
+          </div>
+
+          <dl class="facts">
+            <div>
+              <dt>Local only</dt>
+              <dd>Reads files from <code>~/.codex</code>.</dd>
+            </div>
+            <div>
+              <dt>Menu bar native</dt>
+              <dd>Lives in the status item, not a dashboard.</dd>
+            </div>
+            <div>
+              <dt>Fast to scan</dt>
+              <dd>Rate limits, model, speed, and multiagent mode.</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual">
+          <div class="logo-shell">
+            <img src="../assets/icon.png" alt="CodexTray logo" />
+          </div>
+          <figure class="screenshot">
+            <img src="../assets/screenshot.png" alt="CodexTray menu bar screenshot" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div>
+          <p class="eyebrow">What it shows</p>
+          <h2>Enough signal to keep moving.</h2>
+        </div>
+        <div class="grid">
+          <article>
+            <h3>Rate limits</h3>
+            <p>Current usage, weekly usage, and remaining time estimates from local session data.</p>
+          </article>
+          <article>
+            <h3>Model controls</h3>
+            <p>See the active model and switch quickly from the menu bar.</p>
+          </article>
+          <article>
+            <h3>Speed and multiagent mode</h3>
+            <p>Toggle the settings you actually touch while working.</p>
+          </article>
+          <article>
+            <h3>Built for Mac</h3>
+            <p>LaunchAgent support, app bundle build, and a lightweight status item workflow.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section quote">
+        <p>
+          Inspired by the Codex experience. Not affiliated with OpenAI. Built to stay local,
+          legible, and out of your way.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

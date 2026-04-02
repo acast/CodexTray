@@ -10,6 +10,8 @@ It reads your local Codex session logs and config from `~/.codex`, then shows yo
 
 Inspired by the Codex experience. Not affiliated with OpenAI.
 
+Live preview: https://acast.github.io/CodexTray/
+
 <p align="center">
   <img src="assets/screenshot.png" alt="CodexTray screenshot" width="1100" />
 </p>
