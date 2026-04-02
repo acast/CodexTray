@@ -12,6 +12,8 @@ Inspired by the Codex experience. Not affiliated with OpenAI.
 
 Live preview: https://acast.github.io/CodexTray/
 
+Copyright (c) 2026 acast
+
 <p align="center">
   <img src="assets/screenshot.png" alt="CodexTray screenshot" width="1100" />
 </p>
