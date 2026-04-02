@@ -84,6 +84,73 @@
           legible, and out of your way.
         </p>
       </section>
+
+      <section class="section support" id="support">
+        <div class="support-copy">
+          <p class="eyebrow">Support</p>
+          <h2>Keep the tray local, useful, and independently maintained.</h2>
+          <p class="support-text">
+            If CodexTray saves you time, the cleanest support path right now is a direct TON tip.
+            No extra payment layer, no dead donation service profile.
+          </p>
+
+          <div class="actions support-actions">
+            <button
+              class="button primary copy-button"
+              type="button"
+              data-copy-address="UQAus-A84cilefwzo5zbpmTLOOCyzwL8kE9IMkHRqPM-N7nz"
+              data-default-label="Copy TON address"
+            >
+              Copy TON address
+            </button>
+            <a class="button secondary" href="#support">
+              Scan TON QR
+            </a>
+          </div>
+
+          <p class="support-note">
+            Open the address in Tonkeeper, or scan the QR from any TON-compatible wallet.
+          </p>
+        </div>
+
+        <aside class="support-panel" aria-label="TON donation QR">
+          <div class="support-badge">TON</div>
+          <div class="qr-shell">
+            <img src="../assets/ton-qr.svg" alt="TON wallet QR code" />
+          </div>
+          <p class="support-address">UQAus-A84cilefwzo5zbpmTLOOCyzwL8kE9IMkHRqPM-N7nz</p>
+          <p class="support-caption">Receive address for Tonkeeper and other TON wallets.</p>
+        </aside>
+      </section>
     </main>
+
+    <script>
+      const copyButtons = document.querySelectorAll('[data-copy-address]');
+
+      copyButtons.forEach((button) => {
+        button.addEventListener('click', async () => {
+          const address = button.getAttribute('data-copy-address');
+          const defaultLabel = button.getAttribute('data-default-label') || button.textContent;
+
+          if (!address || !navigator.clipboard) {
+            button.textContent = 'Copy unavailable';
+            return;
+          }
+
+          try {
+            await navigator.clipboard.writeText(address);
+            button.textContent = 'Copied';
+            window.setTimeout(() => {
+              button.textContent = defaultLabel;
+            }, 1200);
+          } catch {
+            button.textContent = 'Copy failed';
+            window.setTimeout(() => {
+              button.textContent = defaultLabel;
+            }, 1200);
+          }
+        });
+      });
+    </script>
   </body>
 </html>

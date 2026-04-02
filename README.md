@@ -12,6 +12,8 @@ Inspired by the Codex experience. Not affiliated with OpenAI.
 
 Live preview: https://acast.github.io/CodexTray/
 
+The preview site includes the TON donation QR.
+
 Copyright (c) 2026 acast
 
 <p align="center">
